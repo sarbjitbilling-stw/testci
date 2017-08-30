@@ -85,12 +85,16 @@ Travis workflow
 
 - Do a dummy commit.
   **See build kicked off in travis web.**
-  Takes a long time to build - 10 minutes.
+  Takes a long time to build, appoximately 10 minutes.
   Final build at:
    
         /home/travis/build/sarbjitbilling-stw/testci/platforms/android/build/outputs/apk/android-debug.apk
 
-- Pushed to gh-pages
+- deploy.sh pushes to gh-pages.
+
+- Access artifact via:
+
+        https://sarbjitbilling-stw.github.io/testci/platforms/android/build/outputs/apk/android-debug.apk
 
 - **Show email received**
 
