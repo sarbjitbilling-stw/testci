@@ -7,21 +7,16 @@ BUILD AN IONIC2 PROJECT USING TRAVIS
 
 - Using bare bones ionic2 app.
 
-
-Create repo on github
----------------------
-
-- URL:
-
-        https://github.com/Severntrent/testci.git
-        https://github.com/sarbjitbilling-stw/testci.git
-
 Create local project
 --------------------
 
 - Ionic2 project.
 
 - **Show structure of .travis file.**
+  
+  Contains:
+  
+           language: java
 
 Usual build cycle
 -----------------
@@ -35,8 +30,14 @@ Usual build cycle
 
 	platforms/android/build/outputs/apk
 
-Push code to github
--------------------
+Create repository on github
+---------------------------
+
+- URL:
+
+        https://github.com/sarbjitbilling-stw/testci.git
+
+- Create repository on github.
 
 - Only source code is pushed.
 
@@ -61,27 +62,18 @@ Login to travis
 
 - Synch travis with github.
 
-- Enable the new project in travis.
+- Enable the new project in travis web.
 
 - Do a dummy commit.
-  See build kicked off in travis gui
+  See build kicked off in travis web.
   Takes a long time to build - 10 minutes.
   Final build at /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
 
 - Pushed to gh-pages
 
-
-
-
+- **Show email received**
 
 ================================================================================
-================================================================================
-================================================================================
-================================================================================
-================================================================================
-
-BUILD IONIC2 PROJECT VIA TRAVIS
--------------------------------
 
 
 - bare bones ionic2 app.
@@ -141,33 +133,6 @@ BUILD IONIC2 PROJECT VIA TRAVIS
 
 
 
-Show structure of .travis file
-
-
-Create repo on github
-
-Go through usual build cycle.
-	npm install / cordova platform add android
-	ionic serve / ionic build android
-Show apk file.
-	platforms/android/build/outputs/apk
-Push code to github.
-	Only source code is pushed.
-
-=====
-My app in github with travis file .yml
-Synch travis with github
-Enable the new project in travis gui
-Do a dummy commit.
-See build kicked off in travis gui
-Takes a long time to build - 10 minutes.
-Final build at /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
-
-
-Pushed to gh-pages
-
-
-
 
 TODOS
 -----
@@ -183,4 +148,6 @@ TODOS
 
 - Tech stack upgrade
   Iconic 3/Angular 4
+
+- Branching strategy
 
