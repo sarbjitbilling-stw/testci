@@ -115,3 +115,4 @@ TODOS
 
 - Branching strategy
 
+- Distribution email
