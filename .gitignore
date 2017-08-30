@@ -1,0 +1,40 @@
+# generic
+logs/
+*.log
+
+# macos
+.DS_Store
+
+
+# intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# eclipse
+eclipse/
+.settings/
+.classpath
+.project
+
+# maven
+target/
+
+# node
+node_modules/
+
+
+# play1
+bin/
+
+# play2
+
+# cordova/ionic
+resources/andriod
+resources/ios
+platforms/
+plugins/
+www/
+
+# project specific files
