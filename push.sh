@@ -23,7 +23,7 @@ commit_files() {
 
 upload_files() {
   echo ===== sb add origin =====
-  git remote add origin-ghp https://sarbjitbilling:${GITHUB_TOKEN}@github.com/sarbjitbilling/testciapp3.git
+  git remote add origin-ghp https://sarbjitbilling-stw:${GITHUB_TOKEN}@github.com/sarbjitbilling-stw/testci.git
 
   echo ===== sb echo GITHUB_TOKEN =====
   echo ${GITHUB_TOKEN}

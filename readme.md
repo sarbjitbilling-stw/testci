@@ -10,7 +10,7 @@ BUILD AN IONIC2 PROJECT USING TRAVIS
 Create local project
 --------------------
 
-- Ionic2 project.
+- Create bare bones Ionic2 app.
 
 - **Show structure of .travis file.**
   
@@ -51,61 +51,10 @@ Create repository on github
 
 - My app in github with travis file (.yml)
 
-Login to travis
----------------
+Github config
+-------------
 
-- URL:
-
-        https://travis-ci.org
-        
-- Authorize travis to access github.
-
-- Synch travis with github.
-
-- Enable the new project in travis web.
-
-- Do a dummy commit.
-  See build kicked off in travis web.
-  Takes a long time to build - 10 minutes.
-  Final build at /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
-
-- Pushed to gh-pages
-
-- **Show email received**
-
-================================================================================
-
-
-- bare bones ionic2 app.
-
-- svn:
-
-        https://github.com/sarbjitbilling/testciapp2.git
-
-- travis:
-
-        https://travis-ci.org/
-
-  auto synch github repositories.
-
-- push dummy commit to github to trigger build.  
-
-- final build in:
-
-        /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
-                                                     platforms/android/build/outputs/apk/android-debug.apk
-
-- create a dummy github pages page.
-
-- create gh-pages branch
-
-        git checkout --orphan gh-pages
-        git reset
-        # remove redundant files
-        echo hi > index.html
-        git push origin gh-pages
-
-- get a github token for deployment to github pages:
+- Get a github token for deployment to github pages:
 
         click in profile picture -> Settings
         click on Personal access tokens
@@ -113,34 +62,45 @@ Login to travis
         give repo access
         click Generate token
 
-- set github token on travis project
+Travis config
+-------------
+
+- URL:
+
+        https://travis-ci.org
+        
+- Authorize travis to access github.
+
+- Synch travis with github repositories.
+
+- Enable the new project in travis web.
+
+- Set github token on travis project:
         
         click on More options -> Settings
         create  GITHUB_TOKEN variable value in Environment Variables section
 
-- access github pages via:
+Travis workflow
+---------------
 
-        https://sarbjitbilling.github.io/testciapp2
-        https://sarbjitbilling.github.io/testciapp3
+- Do a dummy commit.
+  **See build kicked off in travis web.**
+  Takes a long time to build - 10 minutes.
+  Final build at:
+   
+        /home/travis/build/sarbjitbilling-stw/testci/platforms/android/build/outputs/apk/android-debug.apk
 
+- Pushed to gh-pages
 
+- **Show email received**
 
-
-
-
-
-
-
-
-
+================================================================================
 
 TODOS
 -----
-- Fix authorisation error.
+- Fix deployment to GitHub
 
 - **iOS version**
-
-- Fix deployment to GitHub
 
 - Save to Artifactory/Nexus?
 
