@@ -37,13 +37,13 @@ Usual build cycle
 
 Push code to github
 -------------------
+
 - Only source code is pushed.
 
         git init
         git add .
         git commit -m wip
         git remote add origin https://github.com/sarbjitbilling-stw/testci.git
-
         git push origin master
         git branch --set-upstream-to origin/master
         git push
@@ -59,24 +59,26 @@ Login to travis
         
 - Authorize travis to access github.
 
+- Synch travis with github.
 
+- Enable the new project in travis.
 
-=====
-Synch travis with github
-Enable the new project in travis gui
-Do a dummy commit.
-See build kicked off in travis gui
-Takes a long time to build - 10 minutes.
-Final build at /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
+- Do a dummy commit.
+  See build kicked off in travis gui
+  Takes a long time to build - 10 minutes.
+  Final build at /home/travis/build/sarbjitbilling/testciapp2/platforms/android/build/outputs/apk/android-debug.apk
 
-
-Pushed to gh-pages
-
+- Pushed to gh-pages
 
 
 
 
 
+================================================================================
+================================================================================
+================================================================================
+================================================================================
+================================================================================
 
 BUILD IONIC2 PROJECT VIA TRAVIS
 -------------------------------
