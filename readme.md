@@ -102,20 +102,19 @@ Travis workflow
 
 TODOS
 -----
-- Fix deployment to GitHub
-
 - **iOS version**
 
-- Save to Artifactory/Nexus?
+- Save to Artifactory/Nexus/AirWatch (api available)?
 
 - Unit tests
 
 - Tech stack upgrade
-  Iconic 3/Angular 4
+  Ionic 3/Angular 4
 
 - Branching strategy
 
 - Distribution email
+  Possibly WhatsApp group.
 
 
 
