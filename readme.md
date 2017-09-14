@@ -3,7 +3,7 @@ BUILD AN IONIC2 PROJECT USING TRAVIS
 
 - Overview
 
-![Overview](readme-overview.jpg)
+![Overview](readme-overview-v2.jpg)
 
 - Using bare bones ionic2 app.
 
