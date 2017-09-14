@@ -109,11 +109,13 @@ TODOS
 - Unit tests
 
 - Tech stack upgrade
+
   Ionic 3/Angular 4
 
 - Branching strategy
 
 - Distribution email
+
   Possibly WhatsApp group.
 
 
